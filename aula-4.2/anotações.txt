@@ -1,0 +1,26 @@
+Papel do HTML: Inserir Informações na página;
+Papel do CSS: Estilização da página;
+Papel do JS: Mexer no HTML e CSS enquanto o usuário tá navegando;
+
+Onde tiver um colchetes = [array];
+
+Quando está com aspas dentro do array, é um dado local, quando for uma variavel dentro do array, é um dado externo que pode ser mudado;
+
+O array começa da posição 0;
+
+Se a saída do array for undefined, a posição chamada não existe;
+
+If pergunta para os parenteses, é verdade?;
+
+
+Estrutura do for: 
+
+1) Criar uma variavel numérica.
+2) Comparar o valor da variavel
+3) Executa um bloco de código
+4) Alterar o valor da váriavel
+
+
+
+Desafio:
+
