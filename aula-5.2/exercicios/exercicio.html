@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        let myBody = document.querySelector('body')
+        // Exercicio 1
+        let myTitle = document.createElement('h1')
+        myTitle.innerHTML = 'Exercício 5.2 - JavaScript DOM'
+        myBody.appendChild(myTitle)
+        //  Exercicio 2
+        let myMain = document.createElement('main')
+        myMain.className = 'main-content'
+        myBody.appendChild(myMain)
+        // Exercicio 3
+        let mySection = document.createElement('section')
+        mySection.className = 'center-content'
+        let getMain = document.querySelector('main')
+        getMain.appendChild(mySection)
+        // Exercicio 4
+        let myP = document.createElement('p')
+        myP.innerHTML = 'Lorem Ipsum'
+        mySection.appendChild(myP)
+        // Exercicio 5
+        let secondSection = document.createElement('section')
+        secondSection.className = 'left-content'
+        myMain.appendChild(secondSection)
+        // Exercicio 6
+        let thirdSection = document.createElement('section')
+        thirdSection.className = 'right-content'
+        myMain.appendChild(thirdSection)
+        // Exercicio 7
+        let myImg = document.createElement('img')
+        myImg.src = 'https://picsum.photos/200'
+        myImg.className = 'small-imate'
+        secondSection.appendChild(myImg)
+        // Exercicio 8
+        let myUl = document.createElement('ul')
+        thirdSection.appendChild(myUl)
+        let numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
+        for (let num in numbers){
+            let myLi = document.createElement('li')
+            myLi.innerHTML = numbers[num]
+            myUl.appendChild(myLi)
+        }
+        // Exercicio 9
+        for (let i = 0; i < 3 ; i++ ) {
+            let myHt = document.createElement('h3')
+            myMain.appendChild(myHt)
+            myHt.innerHTML = 'Texto Numero: ' + (i+1)
+        }
+        // Parte 2
+        // Exercicio 1
+        myTitle.className = 'title'
+        // Exercicio 2
+        let hs = document.querySelectorAll('h3')
+        for (let i in hs) {
+            hs[i].className = 'description'
+        }
+        // Exercicio 3
+        let removeSection = document.querySelector('.left-content')
+        myMain.removeChild(removeSection)
+        // Exercicio 4
+        let centerSection = document.querySelector('.right-content')
+        centerSection.style.marginRight = 'auto'
+        // Exercicio 5
+        let dadSection = document.querySelector('.center-content').parentElement
+        dadSection.style.backgroundColor = 'green'
+        // Exercicio 6
+        let lista = document.querySelector('ul')
+        let lastChild = lista.lastChild
+        lista.removeChild(lastChild)
+        let lastChildTwo = lista.lastChild
+        lista.removeChild(lastChildTwo)
+        
+    </script>
+  </body>
+</html>
