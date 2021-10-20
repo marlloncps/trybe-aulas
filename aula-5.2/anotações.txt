@@ -1,0 +1,2 @@
+Como criar e adicionar um novo elemento no DOM?
+Como navegar pela arvore do DOM? Selecionar o pai e filhos de um elemento
