@@ -275,3 +275,53 @@
   footer ul li:nth-child(4) {
     order: 4
   } 
+
+  @media screen and (max-width: 600px) {
+    /* Tirando o position fixed do header */
+    header {
+      position: relative;
+      justify-content: center;
+    }
+
+    /* Remover os links */
+    header nav {
+      display: none;
+    }
+
+    /* Diminuir o tamanho da fonte do hero */
+    .hero h1 {
+      font-size: 2rem;
+
+    }
+    .hero h2{
+      font-size: 1rem;
+    }
+
+    /* Fotos: Uma abaixo da outra */
+    .grid .small{
+      flex-basis: 100%;
+    }
+
+    .grid .large {
+      flex-basis: 100%;
+    }
+
+    .features .grid {
+      flex-direction: column;
+    }
+
+    .newsletter form {
+      flex-direction: column;
+      
+    }
+
+    .newsletter form input{
+      margin-bottom: 20px;
+      margin-right: 0px;
+    }
+
+    footer ul li i {
+      font-size: 50px;
+    }
+
+  }
