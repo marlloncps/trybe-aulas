@@ -1,0 +1,88 @@
+.App {
+  padding: 100px 100px;
+  display: flex;
+}
+
+.App form {
+  display: flex;
+  flex-direction: column;
+}
+
+.App .register-form {
+  width: 50%;
+  border-right: 1px white solid;
+}
+
+.App .register {
+  margin-left: 10%;
+  width: 50%;
+}
+
+.App form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.App form input, button {
+  margin: 10px 0;
+  width: 60%;
+  height: 40px;
+}
+
+.App form input {
+  background-color: #454545;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 24px;
+}
+
+.App form button {
+  background-color: #ac23e29a;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.App form .form-error {
+  margin-bottom: 15px;
+  color: rgb(196, 157, 207);
+}
+
+.register ul {
+  padding: 0;
+}
+
+.register li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 780px) {
+  .App {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .App .register-form {
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .App .register {
+    margin-left: 0;
+    width: 50%;
+  }
+
+  .App form input, button {
+    width: 100%;
+  }
+} 
